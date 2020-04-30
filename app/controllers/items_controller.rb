@@ -8,7 +8,7 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
 
-  def cretate
+  def create
     Item.create(name: item_params[:name],price: item_params[:price],user_id: current_user.id)
   end
 

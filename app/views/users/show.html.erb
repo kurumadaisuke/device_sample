@@ -1,4 +1,3 @@
-<%= @user.items.each do |item| %>
-  <p><%= item.name %>:<%= item.price %>
-  </p>
+<% @user.items.each do |item| %>
+  <p>商品名<%= item.name %>:値段<%= item.price %></p>
 <% end %>
